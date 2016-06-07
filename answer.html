@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>answer</title>
+	<script>
+		function fun(){
+			var a=document.getElementById("inp").value;
+			fun2(a);
+			function fun2(a){
+			var b=Math.floor(Math.random()*15);
+			if(b>5 && b<16){
+				document.getElementById("show").innerHTML=a+" "+b;
+			}
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<input id="inp" type="text" placeholder="Please Enter"/>
+	<br />
+	<button onclick="fun()">Submit</button>
+	<div id="show" style="background-color:#F2D0AC ">
+		
+	</div>
+</body>
+</html>
